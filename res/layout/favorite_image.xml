@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" 
+    android:orientation="vertical"
+    android:gravity="center"
+    android:stretchMode="columnWidth"
+    android:id="@+id/fav_item">
+    
+ 
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        >
+    </ImageView>
+<!-- 
+    	<TextView
+        	android:id="@+id/item_image_label"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5px"
+        	android:textSize="15px" >
+    	</TextView>
+     -->
+     	<TableRow
+        android:id="@+id/favoriteRow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+    	<CheckBox android:id="@+id/item_checkbox"
+    	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+    	     />
+    	
+    	<TextView
+        	android:id="@+id/item_image_label"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5px"
+        	android:textSize="15px"
+        	android:layout_weight="1"
+        	 >
+    	</TextView>
+    	
+    </TableRow>
+  
+</LinearLayout>

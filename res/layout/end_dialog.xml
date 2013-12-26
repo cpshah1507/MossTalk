@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+<!--  
+    <TableRow
+        android:id="@+id/endRowFav"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+-->
+        <TextView
+            android:id="@+id/selectFavorites"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="#0000FF"
+            android:text="Select Favorites"
+            android:textSize="30dp" />
+<!--  
+        </TableRow>
+-->
+<!--  
+    <TableRow
+        android:id="@+id/endRow0"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+-->
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:horizontalSpacing="0dp"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp" />
+ 
+        <!--  
+        </TableRow>
+        -->
+<!--  
+    <TableRow
+        android:id="@+id/endRowOmega"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/endRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <RatingBar
+                    android:id="@+id/scoreBar"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:numStars="3"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="25dp"
+                    android:rating="0"
+                     />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/Message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="20px"
+                    android:textStyle="italic" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/Completeness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40px"
+                    android:text="Completeness: "
+                    android:textSize="30px" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/streak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:paddingBottom="0dp"
+                    android:text="Your Longest Streak: "
+                    android:textSize="30px" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endRow5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/improveCompleteness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="*To Improve Completeness, use fewer hints and attempts to answer*"
+                    android:textAlignment="center"
+                    android:textSize="20px"
+                    android:textStyle="italic" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endRow6"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@android:color/holo_blue_light" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endRow7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/endScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score: "
+                    android:textAlignment="center"
+                    android:textSize="30px" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endRow8"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/endScoreTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Score: "
+                    android:textAlignment="center"
+                    android:textSize="30px" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endRow11"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/bestStreak"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@android:color/holo_blue_light" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endRow12"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/sendReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:layout_below="@id/divider2"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:text="Send a detailed report of this set via Email? "
+                    android:textSize="20px" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/endRow13"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save" 
+                    android:onClick="save"
+            />
+
+                <Button
+                    android:id="@+id/send_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Send"
+                    android:onClick="send"
+             />
+            </TableRow>
+        </LinearLayout>
+        <!-- 
+    </TableRow>
+ -->
+</LinearLayout>

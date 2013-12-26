@@ -1,0 +1,123 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3470), pid=1084, tid=7496
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 7.0_01-b08
+# Java VM: Java HotSpot(TM) Client VM (21.1-b02 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x002ca400):  JavaThread "Unknown thread" [_thread_in_vm, id=7496, stack(0x022e0000,0x02330000)]
+
+Stack: [0x022e0000,0x02330000],  sp=0x0232ef24,  free space=315k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1630e1]
+V  [jvm.dll+0x15dcfb]
+V  [jvm.dll+0x18e37]
+V  [jvm.dll+0x1a6a8]
+V  [jvm.dll+0x2a42f]
+V  [jvm.dll+0x2b818]
+V  [jvm.dll+0x2bedb]
+V  [jvm.dll+0x2bf2a]
+V  [jvm.dll+0x2c07d]
+V  [jvm.dll+0x2c15a]
+V  [jvm.dll+0x2c3d7]
+V  [jvm.dll+0x73cb1]
+V  [jvm.dll+0x7406b]
+V  [jvm.dll+0x121a7c]
+V  [jvm.dll+0x14382a]
+V  [jvm.dll+0xa2940]
+C  [javaw.exe+0x1359]
+C  [javaw.exe+0x1dc9]
+C  [javaw.exe+0xa0cb]
+C  [javaw.exe+0xa155]
+C  [kernel32.dll+0x1336a]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x39f72]  RtlInitializeExceptionChain+0x63
+C  [ntdll.dll+0x39f45]  RtlInitializeExceptionChain+0x36
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x002ca400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7496, stack(0x022e0000,0x02330000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00070000 - 0x0009f000 	C:\Program Files\Java\jdk1.7.0_01\bin\javaw.exe
+0x77630000 - 0x777b0000 	C:\windows\SysWOW64\ntdll.dll
+0x769e0000 - 0x76af0000 	C:\windows\syswow64\kernel32.dll
+0x76030000 - 0x76077000 	C:\windows\syswow64\KERNELBASE.dll
+0x71a40000 - 0x71a74000 	C:\Program Files\AVAST Software\Avast\snxhk.dll
+0x75c00000 - 0x75ca0000 	C:\windows\syswow64\ADVAPI32.dll
+0x75f80000 - 0x7602c000 	C:\windows\syswow64\msvcrt.dll
+0x74e20000 - 0x74e39000 	C:\windows\SysWOW64\sechost.dll
+0x76080000 - 0x76170000 	C:\windows\syswow64\RPCRT4.dll
+0x74d10000 - 0x74d70000 	C:\windows\syswow64\SspiCli.dll
+0x74d00000 - 0x74d0c000 	C:\windows\syswow64\CRYPTBASE.dll
+0x76450000 - 0x76550000 	C:\windows\syswow64\USER32.dll
+0x75df0000 - 0x75e80000 	C:\windows\syswow64\GDI32.dll
+0x763c0000 - 0x763ca000 	C:\windows\syswow64\LPK.dll
+0x74d70000 - 0x74e0d000 	C:\windows\syswow64\USP10.dll
+0x71ce0000 - 0x71e7e000 	C:\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x75ee0000 - 0x75f37000 	C:\windows\syswow64\SHLWAPI.dll
+0x76750000 - 0x767b0000 	C:\windows\system32\IMM32.DLL
+0x76ca0000 - 0x76d6c000 	C:\windows\syswow64\MSCTF.dll
+0x731e0000 - 0x73213000 	C:\Windows\SysWOW64\nvinit.dll
+0x0f000000 - 0x0f006000 	C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\_etoured.dll
+0x73b10000 - 0x73b4c000 	C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\nvd3d9wrap.dll
+0x76840000 - 0x769dd000 	C:\windows\syswow64\SETUPAPI.dll
+0x76390000 - 0x763b7000 	C:\windows\syswow64\CFGMGR32.dll
+0x76af0000 - 0x76b7f000 	C:\windows\syswow64\OLEAUT32.dll
+0x74e50000 - 0x74fac000 	C:\windows\syswow64\ole32.dll
+0x76730000 - 0x76742000 	C:\windows\syswow64\DEVOBJ.dll
+0x73ad0000 - 0x73b0b000 	C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\nvdxgiwrap.dll
+0x72b20000 - 0x72bde000 	C:\Program Files\Java\jdk1.7.0_01\jre\bin\msvcr100.dll
+0x64bd0000 - 0x64ef1000 	C:\Program Files\Java\jdk1.7.0_01\jre\bin\client\jvm.dll
+0x73270000 - 0x73277000 	C:\windows\system32\WSOCK32.dll
+0x75f40000 - 0x75f75000 	C:\windows\syswow64\WS2_32.dll
+0x74e40000 - 0x74e46000 	C:\windows\syswow64\NSI.dll
+0x73e50000 - 0x73e82000 	C:\windows\system32\WINMM.dll
+0x76330000 - 0x76335000 	C:\windows\syswow64\PSAPI.DLL
+0x72d20000 - 0x72d2c000 	C:\Program Files\Java\jdk1.7.0_01\jre\bin\verify.dll
+0x72d00000 - 0x72d20000 	C:\Program Files\Java\jdk1.7.0_01\jre\bin\java.dll
+0x72ce0000 - 0x72cf3000 	C:\Program Files\Java\jdk1.7.0_01\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath/p:C:\Users\Mattt\Pictures\adt-bundle-windows-x86-20130917\adt-bundle-windows-x86-20130917\sdk\platforms\android-18\android.jar -Xbootclasspath/a:C:\Users\Mattt\git\mossTalk1\libs\android-support-v4.jar;C:\Users\Mattt\git\mossTalk1\libs\aws-android-sdk-1.6.1-debug.jar 
+java_command: edu.cis350.mosstalkwords.Images_SDB
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Users\Mattt\introcs\java\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;c:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;c:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;c:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;c:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;c:\Program Files (x86)\Roxio\OEM\AudioCore\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\PharosSystems\Core;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files (x86)\MATLAB\R2012a Student\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Users\Mattt\introcs\j3d\bin;C:\Users\Mattt\introcs\bin;C:\Users\Mattt\introcs\java\bin;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;C:\Program Files (x86)\Steam\steamapps\sourcemods\..\bin
+USERNAME=Mattt
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 8292400k(4351192k free), swap 16582944k(12453076k free)
+
+vm_info: Java HotSpot(TM) Client VM (21.1-b02) for windows-x86 JRE (1.7.0_01-b08), built on Oct  3 2011 02:11:36 by "java_re" with unknown MS VC++:1600
+
+time: Wed Oct 23 22:07:02 2013
+elapsed time: 0 seconds
+

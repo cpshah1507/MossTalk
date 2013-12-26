@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent" 
+              android:orientation="vertical" 
+              android:padding="16dp">
+    <Button
+        android:id="@+id/mode1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Easy" 
+        android:layout_weight="1.0"
+        android:background="#ccc"
+        android:layout_marginBottom="16dp"
+        android:textSize="50sp" 
+        android:onClick="btn_tap_mode_1"/>
+    
+    <Button
+        android:id="@+id/mode2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Locked" 
+        android:layout_weight="1.0"
+        android:background="#ccc"
+        android:layout_marginBottom="16dp"
+        android:textSize="50sp" 
+        android:onClick="btn_tap_mode_2"/>
+
+    <Button
+        android:id="@+id/mode3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Locked" 
+        android:layout_weight="1.0"
+        android:background="#ccc"
+        android:layout_marginBottom="16dp"
+        android:textSize="50sp" 
+        android:onClick="btn_tap_mode_3"/>
+
+    <Button
+        android:id="@+id/mode4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Locked" 
+        android:layout_weight="1.0"
+        android:background="#ccc"
+        android:textSize="50sp" 
+        android:onClick="btn_tap_mode_4"/>
+
+</LinearLayout>

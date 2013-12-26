@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:text="@string/score"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/mainMenuLogo"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo1001" />
+    </RelativeLayout>
+
+        <Button
+        android:id="@+id/btnWordQuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="openWordQuest"
+        android:text="@string/wordQuest"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
+    
+    <Button
+        android:id="@+id/btnFavourites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="openFavourites"
+        android:text="@string/favorites"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/btnCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="openCategories"
+        android:text="@string/categories"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight=".2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="#CCC"
+            android:onClick="resetUserData"
+            android:text="@string/reset"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1.0"
+            android:background="#CCC"
+            android:onClick="sendDatabase"
+            android:text="Report Progress"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

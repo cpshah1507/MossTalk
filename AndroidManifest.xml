@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.cis350.mosstalkwords"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wordleicon1"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity android:name="edu.cis350.mosstalkwords.BaseActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.MainActivity" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.EndSetActivity" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.WelcomeActivity" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.NameAndEmailActivity" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.EndSetReturnActivity" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.ProfileActivity" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.ButtonAdapter" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.CategoryListActivity" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.DifficultLevel" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.CategoryListAdapter" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.UserActivity" >
+        </activity>
+        <activity android:name="edu.cis350.mosstalkwords.InnerUserActivity" >
+        </activity>
+        <activity
+            android:name="edu.cis350.mosstalkwords.WordQuestActivity"
+            android:label="@string/title_activity_word_quest" >
+        </activity>
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Tests for My App"
+        android:targetPackage="edu.cis350.mosstalkwords" />
+
+</manifest>

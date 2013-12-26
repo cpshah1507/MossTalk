@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="user_name_base">Name: </string>
+    <string name="email_base">Email: </string>
+    <string name="login">Login</string>
+    <string name="cont_desc_logo">Logo for Wordle</string>
+    <string name="completeness">Completeness: </string>
+    <string name="you_earned">You\'ve earned: </string>
+    <string name="all_time_score">All Time Score: </string>
+    <string name="email_btn">Email</string>
+    <string name="prof_score">Score: </string>
+    <string name="prof_emblem">Badges of Merit:</string>
+    <string name="app_name">Wordle</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="sentence">Sentence</string>
+    <string name="rhyme">Rhyme</string>
+    <string name="answer">Answer</string>
+    <string name="next">Next</string>
+    <string name="score">Score = 0</string>
+    <string name="oldscore">Score = 0</string>
+    <string name="addedscore">+0</string>
+    <string name="nextSet"> Next Set</string>
+    <string name="speak">Speak</string>
+    <string name="restart">Replay Set</string>
+    <string name="menu">Main Menu</string>
+    <string name="congrats">Congratulations!</string>
+    <string name="one_star">Lone stars are only a good thing on the Texas flag. Try harder next time!</string>
+    <string name="two_star">Two stars are better than one, but not as good as three.</string>
+    <string name="three_star">Three stars. If the picture was you, the word would be "awesome."</string>
+    <string name="four_star">Four stars. If the picture was you, the word would be "awesome."</string>
+    <string name="send">Send</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="UserName">Name</string>
+    <string name="email">Email Address</string>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <string name="btnWord">Word</string>
+    <string name="btnSound">Sound</string>
+    <string name="logo">Logo</string>
+    <string name="reset">Reset Score</string>
+    <string name="favorites">Favorites</string>
+    <string name="wordQuest">Word Quest</string>
+    <string name="categories">Categories</string>
+    <string name="title_activity_word_quest">WordQuest</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
